@@ -88,7 +88,7 @@
   }
 
   .navbar-menu {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     margin-bottom: 20px;
   }
@@ -437,7 +437,7 @@
 .vector-image-about {
   width: 100%;
   object-fit: contain;
-  margin-top: 550px;
+  margin-top: 570px;
 }
 
 @media (min-width: 768px) {
