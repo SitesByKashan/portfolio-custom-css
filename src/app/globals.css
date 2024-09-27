@@ -257,7 +257,7 @@
 .vector-image {
   width: 100%;
   object-fit: contain;
-  margin-top: 230px;
+  margin-top: 240px;
 }
 
 @media (min-width: 768px) {
@@ -437,7 +437,7 @@
 .vector-image-about {
   width: 100%;
   object-fit: contain;
-  margin-top: 530px;
+  margin-top: 550px;
 }
 
 @media (min-width: 768px) {
