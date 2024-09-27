@@ -1,95 +1,57 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook, FaDownload, FaPhone } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <main className="container">
+        <div className="content">
+          <h1 className="title">
+            HELLO I AM <br />
+            <span className="name">M KASHAN MALIK AWAN</span>
+          </h1>
+          <p className="description">
+            GENERATIVE AI CHATBOT, FLUTTER MOBILE APP & MERN STACK WEB Developer
+          </p>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          <div className="social-icons">
+            <a href="https://github.com/SitesByKashan" target="_blank" rel="noopener noreferrer" className="icon">
+              <FaGithub size={30} />
+            </a>
+            <a href="https://www.linkedin.com/in/kashan-malik-47374422a/" target="_blank" rel="noopener noreferrer" className="icon">
+              <FaLinkedin size={30} />
+            </a>
+            <a href="https://www.instagram.com/sites_by_kashan/" target="_blank" rel="noopener noreferrer" className="icon">
+              <FaInstagram size={30} />
+            </a>
+            <a href="https://www.facebook.com/kashanmalik.kashanmalik.9" target="_blank" rel="noopener noreferrer" className="icon">
+              <FaFacebook size={30} />
+            </a>
+          </div>
+
+          <div className="cta-buttons">
+            <Link href="/assets/KASHAN_MALIK_RESUME.pdf" className="btn resume-btn">
+              <span className="text">Resume </span>
+              <FaDownload size={20} />
+            </Link>
+            <Link href="/contact" className="btn contact-btn">
+              <span className="text">Contact</span>
+              <FaPhone size={20} />
+            </Link>
+          </div>
+        </div>
+
+        <section className="profile-section">
+          <div className="profile-wrapper">
+            <Image width={2000} height={2000} src="/assets/Profile.jpg" alt="Profile" className="profile-image" />
+          </div>
+        </section>
+
+        <div className="background-image">
+          <Image width={1000} height={1000} src="/assets/Vector 3.png" alt="Vector" className="vector-image" />
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
