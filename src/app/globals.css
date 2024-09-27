@@ -90,6 +90,7 @@
   .navbar-menu {
     flex-direction: row;
     gap: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -437,7 +438,7 @@
 .vector-image-about {
   width: 100%;
   object-fit: contain;
-  margin-top: 570px;
+  margin-top: 580px;
 }
 
 @media (min-width: 768px) {
